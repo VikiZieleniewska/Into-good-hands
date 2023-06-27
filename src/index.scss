@@ -1,15 +1,29 @@
 @import "normalize.css/normalize.css";
+@import "./scss/settings/fonts";
+@import "./scss/settings/colors";
+@import "./scss/settings/dimensions";
+@import "./scss/settings/HomeHeader";
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-base;
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+// h1 {
+//   font-family: $font-alt;
+// }
+// ---------------------------------
+
+// body {
+//   margin: 0;
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+//     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+//     sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+//     monospace;
+// }

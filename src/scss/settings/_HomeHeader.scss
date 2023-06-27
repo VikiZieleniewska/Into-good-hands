@@ -1,0 +1,44 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  //   list-style: none;
+  margin-right: 55px;
+}
+
+.upper-menu {
+  //   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+
+    li {
+      color: var(--color-text);
+    }
+  }
+}
+
+.lower-menu {
+  display: inline-block;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-size: 18px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 55px;
+
+    li {
+      color: var(--color-text);
+    }
+  }
+}
