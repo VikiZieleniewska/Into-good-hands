@@ -1,0 +1,32 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+// footer {
+//   background-color: #f1f1f1;
+//   padding: 20px;
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   align-self: flex-end;
+  //   padding: 20px;
+  // max-width: 960px;
+  // margin: 0 auto;
+
+  .copyright {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: flex-end;
+
+    .social-img {
+      font-size: 24px;
+      margin: 0 10px;
+    }
+  }
+}
+// }

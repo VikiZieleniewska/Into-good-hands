@@ -1,33 +1,30 @@
 import React from "react";
-import HomeHeader from "./HomeHeader";
-// import HomeThreeColumns from "./HomeThreeColumns";
-// import StepsSection from "./StepsSection";
-// import AboutSection from "./AboutSection";
+import HomeHeader from "./HomeHeader/HomeHeader";
+import HomeThreeColumns from "./HomeThreeColumns/HomeThreeColumns";
+import StepsSection from "./StepsSection/StepsSection";
+import AboutSection from "./AboutSection";
 // import HelpSection from "./HelpSection";
-// import ContactSection from "./ContactSection";
-// import Footer from "./Footer";
+import ContactSection from "./ContactSection/ContactSection";
+import Footer from "./Footer/Footer";
 
-const Home = () => {
+function Home() {
   return (
     <>
-      <HomeHeader />
-      {/* <main> */}
       {/* Sekcja główna */}
-      {/* <HomeHeader /> */}
+      <HomeHeader />
       {/* Sekcja z trzema kolumnami */}
-      {/* <HomeThreeColumns /> */}
+      <HomeThreeColumns />
       {/* Sekcja "Wystarczą 4 proste kroki" */}
-      {/* <StepsSection /> */}
+      <StepsSection />
       {/* Sekcja "O nas" */}
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* Sekcja "Komu pomagamy" */}
       {/* <HelpSection /> */}
       {/* Sekcja "Kontakt" */}
-      {/* <ContactSection /> */}
-      {/* </main> */}
-      {/* <Footer /> */}
+      <ContactSection />
+      <Footer />
     </>
   );
-};
+}
 
 export default Home;

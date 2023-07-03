@@ -1,24 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import "../scss/settings/_HomeHeader.scss";
+import "./Navigation.scss";
 
-const HomeHeader = () => {
-  return (
-    <div className="navigation">
-      {/* Górne menu */}
-      <nav className="upper-menu">
-        <ul>
-          <li>
-            <Link to="/login">Zaloguj</Link>
-          </li>
-          <li>
-            <Link to="/signup">Załóż konto</Link>
-          </li>
-        </ul>
-      </nav>
+function Navigation({ useScrollLink }) {
+  let lowerMenu;
 
-      {/* Dolne menu */}
+  if (useScrollLink) {
+    lowerMenu = (
       <nav className="lower-menu">
         <ul>
           <li>
@@ -88,8 +77,49 @@ const HomeHeader = () => {
           </li>
         </ul>
       </nav>
+    );
+  } else {
+    lowerMenu = (
+      <nav className="lower-menu">
+        <ul>
+          <li>
+            <Link to="/#start">Start</Link>
+          </li>
+          <li>
+            <Link to="/#how-it-works">O co chodzi?</Link>
+          </li>
+          <li>
+            <Link to="/#about-us">O nas</Link>
+          </li>
+          <li>
+            <Link to="/#foundations">Fundacje i organizacje</Link>
+          </li>
+          <li>
+            <Link to="/#contact">Kontakt</Link>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+
+  return (
+    <div className="navigation">
+      {/* Górne menu */}
+      <nav className="upper-menu">
+        <ul>
+          <li>
+            <Link to="/logowanie">Zaloguj</Link>
+          </li>
+          <li>
+            <Link to="/rejestracja">Załóż konto</Link>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Dolne menu */}
+      {lowerMenu}
     </div>
   );
-};
+}
 
-export default HomeHeader;
+export default Navigation;

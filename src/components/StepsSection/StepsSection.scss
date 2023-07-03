@@ -1,0 +1,61 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   justify-content: center;
+  padding: 50px 0;
+
+  .upper-box {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .hero-img {
+      margin-top: 15px;
+    }
+  }
+
+  .midle-box {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-primary;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 100px;
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      padding: 0 20px;
+      text-align: center;
+
+      .step-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      .step-title {
+        font-size: 14px;
+      }
+
+      .step-description {
+        font-size: 12px;
+        text-align: center;
+        // flex-wrap: wrap;
+      }
+    }
+  }
+
+  .lower-box {
+    margin-top: 30px;
+    margin-bottom: 0;
+    // text-align: center;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/dimensions";
+
+.singup-page {
+  height: 100vh;
+
+  .singup-form {
+    height: calc(100% - #{$nav-height});
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .hero-img {
+      margin-top: 15px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px;
+      //   margin-top: 20px;
+      margin: 60px;
+      background-color: $color-primary;
+    }
+
+    .singup-buttons {
+      display: flex;
+      //   justify-content: space-between;
+      gap: 150px;
+      margin-top: 35px;
+      color: $color-primary;
+    }
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
