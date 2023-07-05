@@ -1,0 +1,89 @@
+@import "../../scss/settings/fonts";
+@import "../../scss/settings/colors";
+@import "../../scss/settings//dimensions";
+
+.helpSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 30px;
+
+  //   h2 {
+  //     font-size: 18px;
+  //     font-weight: bold;
+  //     margin: 5px;
+  //     text-align: center;
+  //   }
+
+  //   .hero-img {
+  //     margin-top: 15px;
+  //   }
+
+  .helpSection-buttons {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   flex-wrap: wrap;
+    margin: 40px;
+
+    .active-tab {
+      color: $color-text;
+      padding: 5px 10px;
+      background-color: white;
+      cursor: pointer;
+      border: 1px solid $color-text !important;
+    }
+
+    .inactive-tab {
+      color: $color-text;
+      padding: 5px 10px;
+      background-color: white;
+      cursor: pointer;
+      border: none;
+    }
+  }
+
+  .tab-content {
+    margin-top: 15px;
+    padding: 0 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .tab-text {
+      padding: 0 20px;
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      //   align-items: center;
+      //   justify-content: space-between;
+
+      .table-row {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.5px solid $color-text;
+        padding-bottom: 24px;
+
+        .row-text {
+          text-align: start;
+
+          h3 {
+          }
+
+          p {
+          }
+        }
+
+        .row-tags {
+          text-align: end;
+        }
+      }
+    }
+  }
+}

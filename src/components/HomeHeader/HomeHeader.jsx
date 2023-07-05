@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Navigation from "../Navigation/Navigation";
 import "./HomeHeader.scss";
 
 function HomeHeader() {
   return (
-    <div className="hero">
+    <div id="start" className="hero start">
       <section className="hero-image">
         <img
           className="menu__img"
@@ -26,10 +27,10 @@ function HomeHeader() {
           />
           <div className="hero-buttons">
             <button className="primary-button" type="button">
-              ODDAJ RZECZY
+              <Link to="/logowanie">ODDAJ RZECZY</Link>
             </button>
             <button className="primary-button" type="button">
-              ZORGANIZUJ ZBIÓRKĘ
+              <Link to="/logowanie">ZORGANIZUJ ZBIÓRKĘ</Link>
             </button>
           </div>
         </div>

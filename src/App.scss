@@ -1,5 +1,6 @@
 @import "./scss/settings/fonts";
 @import "./scss/settings/colors";
+@import "./scss/settings/dimensions";
 
 * {
   padding: 0;
@@ -40,6 +41,10 @@ body {
   background-color: white;
   cursor: pointer;
   border: none;
+}
+
+.hero-img {
+  margin-top: 15px;
 }
 
 // .App {

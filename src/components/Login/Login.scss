@@ -12,22 +12,20 @@
     justify-content: center;
     text-align: center;
 
-    .hero-img {
-      margin-top: 15px;
-    }
+    // .hero-img {
+    //   margin-top: 15px;
+    // }
 
     .form {
       display: flex;
       flex-direction: column;
       padding: 20px 40px;
-      //   margin-top: 20px;
       margin: 60px;
       background-color: $color-primary;
     }
 
     .login-buttons {
       display: flex;
-      //   justify-content: space-between;
       gap: 150px;
       margin-top: 35px;
       color: $color-primary;

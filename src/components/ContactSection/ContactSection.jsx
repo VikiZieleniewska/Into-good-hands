@@ -1,7 +1,6 @@
-import { Box } from "@mui/system";
 import React from "react";
 import "./ContactSection.scss";
-import { TextField, FormControl, Button } from "@mui/material";
+import { TextField } from "@mui/material";
 
 function ContactSection() {
   const handleSubmit = (event) => {
@@ -10,7 +9,7 @@ function ContactSection() {
 
   return (
     <div id="contact" className="contact">
-      <section className="">
+      <section>
         <img
           className="contact-img"
           src="./assets/Background-Contact-Form.jpg"

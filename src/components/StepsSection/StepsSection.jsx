@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// import Divider from "@mui/material/Divider";
+
 import "./StepsSection.scss";
 
 function StepsSection() {
   return (
-    <div className="box how-it-works">
+    <div id="how-it-works" className="box how-it-works">
       <section className="upper-box">
         <div className="steps">
           <h2>Wystarczą 4 proste kroki</h2>
@@ -22,6 +25,7 @@ function StepsSection() {
             alt="icon t-shirt"
           />
           <p className="step-title">Wybierz rzeczy</p>
+          {/* <Divider variant="inset" component="li" fullwidth /> */}
           <p className="step-description">ubrania, zabawki, sprzęt i inne</p>
         </div>
         <div className="step">
@@ -51,7 +55,7 @@ function StepsSection() {
         </div>
       </section>
       <button className="primary-button lower-box" type="button">
-        ODDAJ RZECZY
+        <Link to="/logowanie">ODDAJ RZECZY</Link>
       </button>
     </div>
   );
