@@ -63,6 +63,7 @@ function Login() {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               error={emailError}
+              helperText={emailError ? "Podany email jest nieprawidłowy!" : ""}
               label="Email"
               placeholder=""
               type="text"
@@ -76,6 +77,7 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               error={passwordError}
+              helperText={passwordError ? "Podane hasło jest za krótkie!" : ""}
               label="Hasło"
               type="password"
               InputLabelProps={{ shrink: true }}

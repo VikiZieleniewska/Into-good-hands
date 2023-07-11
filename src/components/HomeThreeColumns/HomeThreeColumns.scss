@@ -13,21 +13,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 60px;
+    // margin: 40px 60px;
+    padding: 40px 60px;
+
     font-family: $font-base;
 
     .number {
-      font-size: 38px;
+      font-size: 48px;
       // font-family: $font-base;
       font-weight: 300;
     }
 
     .title {
-      font-size: 14px;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 10px;
     }
 
     .description {
       font-size: 12px;
+      padding-top: 10px;
+
       text-align: center;
     }
   }

@@ -1,3 +1,7 @@
+@import "../../scss/settings/fonts";
+@import "../../scss/settings/colors";
+@import "../../scss/settings//dimensions";
+
 .contact {
   display: flex;
   //   padding-top: 10px;
@@ -37,6 +41,16 @@
       // margin: 70px 30px;
       text-align: center;
       margin-bottom: 20px;
+
+      .success-message {
+        color: $color-success;
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
       .contact-form-row {
         display: flex;

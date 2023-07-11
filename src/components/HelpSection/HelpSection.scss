@@ -21,25 +21,33 @@
   //   }
 
   .helpSection-buttons {
-    //   display: flex;
+    // display: flex;
     //   flex-direction: column;
-    //   justify-content: center;
+    // justify-content: space-around !important;
     //   flex-wrap: wrap;
+    // gap: 30px;
     margin: 40px;
 
-    .active-tab {
+    .custom-tab {
       color: $color-text;
       padding: 5px 10px;
       background-color: white;
       cursor: pointer;
+      text-transform: none;
+      font-size: 16px;
+      width: 140px;
+      margin-right: 50px;
+    }
+
+    .custom-tab:last-of-type {
+      margin-right: 0;
+    }
+
+    .active-tab {
       border: 1px solid $color-text !important;
     }
 
     .inactive-tab {
-      color: $color-text;
-      padding: 5px 10px;
-      background-color: white;
-      cursor: pointer;
       border: none;
     }
   }
@@ -54,36 +62,6 @@
 
     .tab-text {
       padding: 0 20px;
-    }
-
-    .table {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      //   align-items: center;
-      //   justify-content: space-between;
-
-      .table-row {
-        display: flex;
-        // align-items: center;
-        justify-content: space-between;
-        border-bottom: 0.5px solid $color-text;
-        padding-bottom: 24px;
-
-        .row-text {
-          text-align: start;
-
-          h3 {
-          }
-
-          p {
-          }
-        }
-
-        .row-tags {
-          text-align: end;
-        }
-      }
     }
   }
 }
